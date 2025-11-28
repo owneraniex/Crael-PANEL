@@ -212,5 +212,5 @@ bash <(curl -s https://raw.githubusercontent.com/owneraniex/Cracken-BASH/main/Lo
   <b>Engineered with 💜 by <span style="color:#7000ff;">Nayeem Dev</span></b>
 </p>
 <p align="center">
-  <a href="https://github.com/owneraniex"><b>GitHub</b></a> • <a href="https://discord.gg"><b>Discord</b></a>
+  <a href="https://github.com/owneraniex"><b>GitHub</b></a> • <a href="https://discord.gg/KdCAZ3M5EQ"><b>Discord</b></a>
 </p>
