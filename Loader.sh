@@ -1,19 +1,41 @@
 #!/bin/bash
-# Nayeem Dev - Secure Loader
-# This script downloads the encrypted installer binary and runs it.
+# ==========================================
+# CRACKEN ULTIMATE INSTALLER
+# Engineered by Nayeem Dev
+# ==========================================
 
-# 1. PASTE THE LINK TO YOUR 'installer' BINARY HERE
-SECURE_LINK="https://github.com/owneraniex/Cracken/releases/download/v5.0/installer"
+# 1. SETUP - PASTE YOUR GITHUB LINK BELOW
+#    Example: https://github.com/owneraniex/Cracken/releases/download/v5.0/installer
+BINARY_URL="https://github.com/plumsoftwaredev-bit/FFMB/releases/download/v1.0/installer"
+INSTALL_PATH="/usr/local/bin/ny-crackenvps"
 
-# 2. SETUP PATHS
-TEMP_FILE=$(mktemp)
+# 2. UI HELPERS
+RESET="\033[0m"
+GREEN="\033[32m"
+MAGENTA="\033[35m"
+
+clear
+echo -e "${MAGENTA}"
+echo "   CRACKEN ULTIMATE INSTALLER"
+echo "   Powered by Nayeem Dev"
+echo -e "${RESET}"
 
 # 3. DOWNLOAD
-curl -L -s -o "$TEMP_FILE" "$SECURE_LINK"
+echo -e "${GREEN}[*] Downloading Core Binary...${RESET}"
+curl -L --progress-bar -o "$INSTALL_PATH" "$BINARY_URL"
 
-# 4. EXECUTE
-chmod +x "$TEMP_FILE"
-"$TEMP_FILE"
+# 4. VERIFY DOWNLOAD
+if [ ! -f "$INSTALL_PATH" ]; then
+    echo "Error: Download failed. Please check the URL in install.sh"
+    exit 1
+fi
 
-# 5. CLEANUP
-rm "$TEMP_FILE"
+# 5. PERMISSIONS & EXECUTION
+chmod +x "$INSTALL_PATH"
+
+echo -e "${GREEN}[*] Launching Wizard...${RESET}"
+sleep 1
+
+# --- THE FIX IS HERE ---
+# We force the binary to read from /dev/tty (Your Keyboard) instead of the curl pipe.
+"$INSTALL_PATH" < /dev/tty
