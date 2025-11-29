@@ -1,4 +1,4 @@
-# <p align="center">🐙 <span style="color:#ff00d4;font-size:64px;"><b>CRACKEN V5 ULTIMATE</b></span> 🐙</p>
+# <p align="center">🐙 <span style="color:#ff00d4;font-size:64px;"><b>CRAEL V10 ULTIMATE</b></span> 🐙</p>
 ### <p align="center"><b>Professional Pterodactyl Infrastructure Manager</b></p>
 
 <p align="center">
