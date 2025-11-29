@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# --- 1. RECONNECT INPUT (CRITICAL FIX) ---
+# This forces the script to stop reading from the curl pipe and 
+# attach to your keyboard immediately. This stops the auto-cancel.
 exec < /dev/tty
 
 # --- 2. THE HIDDEN KEY ---
