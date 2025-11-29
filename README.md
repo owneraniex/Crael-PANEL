@@ -65,7 +65,7 @@ wget -qO setup.sh https://raw.githubusercontent.com/owneraniex/Crael-PANEL/main/
   </tr>
   <tr>
     <td>🏎️ <b>Turbo Engine</b></td>
-    <td>Written in <b>Golang</b>. Executes logic 10x faster than shell scripts. Zero lag.</td>
+    <td>Written in <b>SPECIAL CODE</b>. Executes logic 10x faster than shell scripts. Zero lag.</td>
   </tr>
   <tr>
     <td>🛡️ <b>Binary Lock</b></td>
